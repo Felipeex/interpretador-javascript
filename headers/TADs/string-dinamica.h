@@ -7,6 +7,8 @@ struct stringDinamica {
 }; typedef struct stringDinamica strDin;
 
 void init(strDin ** str);
+void inserirLetra(strDin ** string, char letra);
+void exibeString(strDin * string);
 
 void init(strDin ** str) {
   *str = NULL;
@@ -25,5 +27,12 @@ void inserirLetra(strDin ** string, char letra) {
     while (aux->prox != NULL) 
       aux = aux->prox;
     aux->prox = nova;
+  }
+}
+
+void exibeString(strDin * string) {
+  while (string != NULL) {
+    printf("%c", string->letra);
+    string = string->prox;
   }
 }
