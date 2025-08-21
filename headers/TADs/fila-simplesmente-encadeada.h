@@ -5,10 +5,10 @@
 struct filaSimplesmente {
   strDin string;
   struct filaSimplesmente * prox;
-}; typedef struct filaSimplesmente filaSimplesmente;
+}; typedef struct filaSimplesmente FilaSimplesmente;
 
-void initFilaSimplesmete (filaSimplesmente ** fila);
+void initFilaSimplesmete (FilaSimplesmente ** fila);
 
-void initFilaSimplesmete (filaSimplesmente ** fila) {
+void initFilaSimplesmete (FilaSimplesmente ** fila) {
   *fila = NULL;
 }
